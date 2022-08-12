@@ -1,3 +1,15 @@
 h1{
     color: tomato;
 }
+ul{
+    color: tomato;
+}
+#fruits-title{
+    color: gray;
+}
+#places-title{
+    color: darkorange;
+}
+.important-palce{
+    color: blueviolet;
+}
