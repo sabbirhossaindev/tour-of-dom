@@ -43,28 +43,28 @@ const liCollection = document.getElementsByTagName('li');
     // console.log(liCollection);
 // for of loop use.........
 for (const li of liCollection) {
-    console.log(li.innerText);
+    // console.log(li.innerText);
 }
 
 
 const allHeading = document.getElementsByTagName('h1');
 // for of loop use.....
 for (const h1 of allHeading) {
-    console.log(h1.innerText);
+    // console.log(h1.innerText);
 }
 
 // getElementById  kno kata specak vava kisu pata chila id use kora lagba....
 let fruits = document.getElementById('fruits-title');
 fruits.innerText = 'fruits changed by javaScript'; // innerText   & set value
-console.log(fruits);
+// console.log(fruits);
 
 
 let place = document.getElementById('places-title').innerText;
-console.log(place);
+// console.log(place);
 
 
 let importan_places = document.getElementsByClassName('important-palce');
-console.log(importan_places);
+// console.log(importan_places);
 
 
 // querySelector ........Explore..
@@ -77,11 +77,11 @@ console.log(importan_places);
 
 const onlyOne = document.querySelector('.fruits-container li');
 for (const li of onlyOne) {
-    console.log(li.innerText);
+    // console.log(li.innerText);
 }
 // js style getElementById('dom-explore').style.textAlign='center';.......
 const myStyle = document.getElementById('dom-explore').style.textAlign = 'center';
-console.log(myStyle);
+// console.log(myStyle);
 
 // title.getAttribute('class');........
 const dom = document.getAttribute('class');
@@ -102,7 +102,22 @@ const title = document.getElementById('dom-explore');
 title.setAttribute('title', 'welcome......');
 
 //
-document.getElementsByClassName('fruits-container');
-document.getElementsByClassName('fruits-container')[0];
-document.getElementsByClassName('fruits-container')[0].innerHTML;
-document.getElementsByClassName('fruits-container')[0].innerText;
+// document.getElementsByClassName('fruits-container');
+// document.getElementsByClassName('fruits-container')[0];
+// document.getElementsByClassName('fruits-container')[0].innerHTML;
+// document.getElementsByClassName('fruits-container')[0].innerText;
+
+
+// some style add in javaScript.........
+const sections = document.querySelectorAll('section');
+for (const section of sections) {
+    section.style.border = '2px solid gray';
+    section.style.marginBottom = '5px';
+    section.style.borderRadius = '15px';
+    section.style.paddingLeft = '7px';
+    section.style.backgroundColor = 'lightGray';
+}
+
+// 
+const exploreDom = document.getElementById('explore-dom');
+exploreDom.style.backgroundColor = 'yellow';
