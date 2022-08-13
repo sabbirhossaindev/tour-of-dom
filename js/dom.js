@@ -79,3 +79,30 @@ const onlyOne = document.querySelector('.fruits-container li');
 for (const li of onlyOne) {
     console.log(li.innerText);
 }
+// js style getElementById('dom-explore').style.textAlign='center';.......
+const myStyle = document.getElementById('dom-explore').style.textAlign = 'center';
+console.log(myStyle);
+
+// title.getAttribute('class');........
+const dom = document.getAttribute('class');
+
+// classList class koyta asa ta janta....
+title.classList;
+
+// title.classListRemove('bg-red');.........
+title.classList.remove('bg-red');
+title.classList;
+
+// title.classList.add('kala-kala');......
+title.classList.add('kala-kala');
+title.classList;
+
+// title.setAttribute('title', 'welcome......');
+const title = document.getElementById('dom-explore');
+title.setAttribute('title', 'welcome......');
+
+//
+document.getElementsByClassName('fruits-container');
+document.getElementsByClassName('fruits-container')[0];
+document.getElementsByClassName('fruits-container')[0].innerHTML;
+document.getElementsByClassName('fruits-container')[0].innerText;
